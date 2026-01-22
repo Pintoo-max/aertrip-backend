@@ -9,5 +9,5 @@ class EmployeeContact extends Model
     //
     protected $connection = 'mysql';
     protected $table = 'employee_contacts'; 
-    protected $fillable = ['employee_id','address','country','state','city','pincode'];
+    protected $fillable = ['employee_id','contact_number','type'];
 }

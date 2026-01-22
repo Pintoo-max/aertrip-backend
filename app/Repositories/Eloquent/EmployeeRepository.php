@@ -1,6 +1,9 @@
 <?php
 
-namespace app\Repositories\Eloquent;
+namespace App\Repositories\Eloquent;
+use App\Repositories\Contracts\EmployeeRepositoryInterface;
+use App\Models\Employee;
+use Illuminate\Support\Facades\DB;
 
 class EmployeeRepository implements EmployeeRepositoryInterface
 {
@@ -17,6 +20,8 @@ class EmployeeRepository implements EmployeeRepositoryInterface
 	{
 		return DB::transaction(function () use ($data) {
 		$employee = Employee::create($data);
+		// print_r($data);
+		// dd();
 		$employee->contacts()->createMany($data['contacts']);
 		$employee->addresses()->createMany($data['addresses']);
 		return $employee;
@@ -31,9 +36,9 @@ class EmployeeRepository implements EmployeeRepositoryInterface
 	public function update(int $id, array $data)
 	{
 		return DB::transaction(function () use ($id,$data) {
-		$employee = $this->find($id);
-		$employee->update($data);
-		return $employee;
+			$employee = $this->find($id);
+			$employee->update($data);
+			return $employee;
 		});
 	}
 

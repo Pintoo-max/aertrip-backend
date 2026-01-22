@@ -1,13 +1,20 @@
 <?php
 
-namespace app\Services;
+namespace App\Services;
+use App\Repositories\Contracts\EmployeeRepositoryInterface;
 
 class EmployeeService
 {
-	public function __construct(private EmployeeRepositoryInterface $repo)
-	{
+	protected EmployeeRepositoryInterface $employeeRepository;
+	// public function __construct(private EmployeeRepositoryInterface $repo)
+	// {
 
-	}
+	// }
+
+    public function __construct(EmployeeRepositoryInterface $employeeRepository)
+    {
+        $this->repo = $employeeRepository;
+    }
 
 	public function list(array $filters)
 	{

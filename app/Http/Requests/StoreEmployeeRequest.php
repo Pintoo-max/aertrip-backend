@@ -11,7 +11,9 @@ class StoreEmployeeRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        // return false;
+        return true;
+        
     }
 
     /**
@@ -29,8 +31,13 @@ class StoreEmployeeRequest extends FormRequest
             'email'=>'required|email|unique:employees,email',
             'contacts'=>'required|array',
             'contacts.*.contact_number'=>'required',
+            'contacts.*.type' => 'required|string',
             'addresses'=>'required|array',
-            'contacts.*.address'=>'required',
+            'addresses.*.address'=>'required',
+            'addresses.*.city' => 'required|string',
+            'addresses.*.state' => 'required|string',
+            'addresses.*.pincode' => 'required|string',
+            'addresses.*.country' => 'required|string',
         ];
     }
 }

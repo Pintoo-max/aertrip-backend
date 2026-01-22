@@ -16,18 +16,19 @@ class EmployeeResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'name' => trim($this->first_name.' '.$this->last_name),
+            'first_name' => $this->first_name,
+            'last_name' => $this->last_name,
             'email' => $this->email,
 
             'department' => [
                 'id'   => $this->department?->id,
-                'name' => $this->department?->name,
+                'department_name' => $this->department?->name,
             ],
 
             'contacts' => $this->contacts->map(function ($contact) {
                 return [
                     'id'           => $contact->id,
-                    'phone_number' => $contact->phone_number,
+                    'contact_number' => $contact->phone_number,
                     'type'         => $contact->type,
                 ];
             }),
@@ -35,7 +36,7 @@ class EmployeeResource extends JsonResource
             'addresses' => $this->addresses->map(function ($address) {
                 return [
                     'id'            => $address->id,
-                    'address_line1' => $address->address_line1,
+                    'address' => $address->address_line1,
                     'city'          => $address->city,
                     'state'         => $address->state,
                     'pincode'       => $address->pincode,
