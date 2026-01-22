@@ -22,13 +22,13 @@ class EmployeeResource extends JsonResource
 
             'department' => [
                 'id'   => $this->department?->id,
-                'department_name' => $this->department?->name,
+                'department_name' => $this->department?->department_name,
             ],
 
             'contacts' => $this->contacts->map(function ($contact) {
                 return [
                     'id'           => $contact->id,
-                    'contact_number' => $contact->phone_number,
+                    'contact_number' => $contact->contact_number,
                     'type'         => $contact->type,
                 ];
             }),

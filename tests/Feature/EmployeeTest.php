@@ -7,7 +7,6 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Models\Department;
 use App\Repositories\Contracts\EmployeeRepositoryInterface;
 use App\Repositories\Eloquent\EmployeeRepository;
-use App\Models\User;
 
 class EmployeeTest extends TestCase
 {

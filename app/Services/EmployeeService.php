@@ -5,15 +5,15 @@ use App\Repositories\Contracts\EmployeeRepositoryInterface;
 
 class EmployeeService
 {
-	protected EmployeeRepositoryInterface $employeeRepository;
+	protected EmployeeRepositoryInterface $repo;
 	// public function __construct(private EmployeeRepositoryInterface $repo)
 	// {
 
 	// }
 
-    public function __construct(EmployeeRepositoryInterface $employeeRepository)
+    public function __construct(EmployeeRepositoryInterface $repo)
     {
-        $this->repo = $employeeRepository;
+        $this->repo = $repo;
     }
 
 	public function list(array $filters)
