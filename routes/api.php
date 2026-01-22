@@ -1,4 +1,4 @@
 <?php
 use App\Http\Controllers\Api\EmployeeController;
 
-Route::apiResource('employees',EmployeeController::class);
+Route::apiResource('v1/employees',EmployeeController::class);

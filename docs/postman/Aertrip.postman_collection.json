@@ -28,7 +28,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"first_name\": \"Pintoo3\",\r\n  \"last_name\": \"Chauhan3\",\r\n  \"email\": \"pintoo3@aertrip.com\",\r\n  \"department_id\": 2,\r\n  \"contacts\": [\r\n    {\r\n      \"contact_number\": \"9876543210\",\r\n      \"type\": \"personal\"\r\n    },\r\n    {\r\n      \"contact_number\": \"022123456\",\r\n      \"type\": \"office\"\r\n    }\r\n  ],\r\n  \"addresses\": [\r\n    {\r\n      \"address\": \"Thane West\",\r\n      \"city\": \"Mumbai\",\r\n      \"state\": \"MH\",\r\n      \"pincode\": \"400601\",\r\n      \"country\": \"India\"\r\n    }\r\n  ]\r\n}\r\n",
+					"raw": "{\r\n  \"first_name\": \"Pintoo4\",\r\n  \"last_name\": \"Chauhan4\",\r\n  \"email\": \"pintoo4@aertrip.com\",\r\n  \"department_id\": 2,\r\n  \"contacts\": [\r\n    {\r\n      \"contact_number\": \"9876543210\",\r\n      \"type\": \"personal\"\r\n    },\r\n    {\r\n      \"contact_number\": \"022123456\",\r\n      \"type\": \"office\"\r\n    }\r\n  ],\r\n  \"addresses\": [\r\n    {\r\n      \"address\": \"Thane West\",\r\n      \"city\": \"Mumbai\",\r\n      \"state\": \"MH\",\r\n      \"pincode\": \"400601\",\r\n      \"country\": \"India\"\r\n    }\r\n  ]\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -36,7 +36,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/employees",
+					"raw": "http://127.0.0.1:8000/api/v1/employees",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -47,6 +47,7 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"employees"
 					]
 				}
@@ -74,7 +75,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/employees",
+					"raw": "http://127.0.0.1:8000/api/v1/employees",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -85,6 +86,7 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"employees"
 					]
 				}
@@ -100,7 +102,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/employees/2",
+					"raw": "http://127.0.0.1:8000/api/v1/employees/2",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -111,6 +113,7 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"employees",
 						"2"
 					]
@@ -136,7 +139,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/employees/2",
+					"raw": "http://127.0.0.1:8000/api/v1/employees/2",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -147,6 +150,7 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"employees",
 						"2"
 					]
@@ -163,7 +167,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/employees/2",
+					"raw": "http://127.0.0.1:8000/api/v1/employees/2",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -174,6 +178,7 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"employees",
 						"2"
 					]
@@ -202,7 +207,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/employees",
+					"raw": "http://127.0.0.1:8000/api/v1/employees",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -213,6 +218,7 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"employees"
 					]
 				}
@@ -240,7 +246,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/employees",
+					"raw": "http://127.0.0.1:8000/api/v1/employees",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -251,6 +257,7 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"employees"
 					]
 				}
