@@ -36,7 +36,7 @@ class EmployeeResource extends JsonResource
             'addresses' => $this->addresses->map(function ($address) {
                 return [
                     'id'            => $address->id,
-                    'address' => $address->address_line1,
+                    'address' => $address->address,
                     'city'          => $address->city,
                     'state'         => $address->state,
                     'pincode'       => $address->pincode,
