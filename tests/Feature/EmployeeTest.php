@@ -33,7 +33,7 @@ class EmployeeTest extends TestCase
         ]);
 
         $response = $this
-        ->postJson('/api/employees', [
+        ->postJson('/api/v1/employees', [
             'first_name' => 'Pintoo',
             'last_name'  => 'Chauhan',
             'email'      => 'pintoo@test.com',
